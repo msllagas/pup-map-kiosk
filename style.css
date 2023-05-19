@@ -19,7 +19,7 @@ html {
 }
 
 hr{
-  color: rgba(0, 0, 0, 0.555);
+  color: rgba(0, 0, 0, 0.5);
   margin: 1rem 0;
 }
 
@@ -47,8 +47,7 @@ header .title {
   border-radius: 1rem;
   animation: fade-in 0.5s ease;
   box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
+  text-align: center;
 }
 
 .building__photo {
@@ -106,12 +105,13 @@ header .title {
   border: none;
   border-radius: 50%;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: rgb(218, 209, 209);
   margin-left: auto;
   cursor: pointer;
 }
+
 .modal__button:hover{
-  background-color: red;
+  background-color: rgb(209, 35, 35);
   color: white;
 }
 
