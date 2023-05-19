@@ -2,18 +2,23 @@
 <html>
   <head>
     <title>Image Map Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-
       <h1 class="title">PUP Main Campus Map</h1>
     </header>
 
     <div class="map-container">
       <img src="assets/main.jpg" alt="Your Image" usemap="#image-map" />
-      <map name="image-map"
-        >\
+      <map name="image-map">
         <!-- Interfaith Chapel -->
         <area
           class="area"
@@ -114,7 +119,7 @@
           title="Main Building"
           data-image="assets/main-building.jpg"
         />
-
+      </map>
       <div class="building">
         <img
           src=""
@@ -123,9 +128,33 @@
           class="building__photo"
         />
         <h3 id="building__name" class="building__name"></h3>
+        <hr />
         <p id="building__description" class="building__description"></p>
       </div>
     </div>
+
+    <div id="modal" class="modal">
+      <div class="modal__button--container">
+        <button id="modal__button" class="modal__button">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <img
+        src="/assets/canteen.jpg"
+        alt=""
+        id="modal__building--image"
+        class="modal__building--image"
+      />
+      <h1 id="modal__building--name" class="modal__building--name">Canteen</h1>
+      <hr />
+      <p id="modal__building--description" class="modal__building--description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        libero nesciunt cumque consequatur! Saepe odit expedita repellat error
+        nobis explicabo. Animi fugiat perspiciatis sit quasi cumque earum, in
+        architecto harum?
+      </p>
+    </div>
+    <div id="backdrop" class="backdrop"></div>
 
     <script src="app.js"></script>
   </body>
