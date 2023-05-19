@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Map Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+
+      <h1 class="title">PUP Main Campus Map</h1>
+    </header>
+
+    <div class="map-container">
+      <img src="assets/main.jpg" alt="Your Image" usemap="#image-map" />
+      <map name="image-map"
+        >\
+        <!-- Interfaith Chapel -->
+        <area
+          class="area"
+          shape="circle"
+          coords="509,483,63"
+          href="#"
+          alt="The ecumenical chapel (known as the Interfaith Chapel) is a nondenominational Christian church located inside the PUP - A. Mabini Campus."
+          title="Interfaith Chapel"
+          data-image="assets/chapel.jpg"
+        />
+        <!-- Gymnasium and Sports Center -->
+        <area
+          class="area"
+          shape="poly"
+          coords="665,26,786,37,786,120,657,111"
+          href="#"
+          alt="The University Gymnasium serves as the training ground for the student athletes that participate in the intercollegiate sports program."
+          title="Gymnasium and Sports Center"
+          data-image="assets/gym.jpg"
+        />
+        <!-- Ninoy Aquino Library and Learning Resource Center -->
+        <area
+          class="area"
+          shape="poly"
+          coords="314,27,381,220,419,199,394,132,466,104,452,64,379,90,355,14"
+          href="#"
+          alt="The Ninoy Aquino Library and Learning Resources Center is the library system of the Polytechnic University of the Philippines composed of libraries providing services to the PUP System."
+          title="Ninoy Aquino Library and Learning Resources Center"
+          data-image="assets/library.jpg"
+        />
+        <!-- Track and Football Oval -->
+        <area
+          class="area"
+          shape="poly"
+          coords="625,440,725,300,838,287,873,400,760,551,651,560"
+          href="#"
+          alt="A football field that can serve as softball, soccer, and football fields for students."
+          title="Track and Football Oval"
+          data-image="assets/oval.jpg"
+        />
+        <!-- Charlie del Rosario Hall -->
+        <area
+          class="area"
+          shape="poly"
+          coords="186,163,291,228,272,259,167,198"
+          href="#"
+          alt="Charlie del Rosario Hall is a multi-purpose building named after the first victim of the Marcos Regime."
+          title="Charlie del Rosario Hall"
+          data-image="assets/charlie.jpg"
+        />
+        <!-- Student Canteen -->
+        <area
+          class="area"
+          shape="poly"
+          coords="236,253,263,266,252,286,224,272"
+          href="#"
+          alt="An in-house canteen, coffee shop, and other food services from private concessionaires renting food stalls."
+          title="Student Canteen"
+          data-image="assets/canteen.jpg"
+        />
+        <!-- Lagoon -->
+        <area
+          class="area"
+          shape="poly"
+          coords="421,206,430,152,458,148,477,172,456,209,434,263,395,287,355,294,353,276,381,225"
+          href="#"
+          alt="Lagoon is a place for students to brainstorm for group projects. A relaxing area where you can catch some sleep. Lastly, where lovers stay upon the strike of darkness! The lagoon is indeed a defining landmark of the campus."
+          title="Lagoon"
+          data-image="assets/lagoon.jpg"
+        />
+        <!-- Laboratory High School -->
+        <area
+          class="area"
+          shape="poly"
+          coords="181,8,138,82,270,156,277,145,254,55"
+          href="#"
+          alt="The Polytechnic University of the Philippines Laboratory High School, abbreviated as PUPLHS, is the laboratory school of the Polytechnic University of the Philippines College of Education."
+          title="Laboratory High School"
+          data-image="assets/lab-high.jpg"
+        />
+        <!-- Swimming Pool -->
+        <area
+          class="area"
+          shape="poly"
+          coords="544,21,539,89,552,114,640,120,648,28"
+          href="#"
+          alt="An olympic-sized swimming pool that is capable of handling several swimming classes and student athlete activities simultaneously."
+          title="Swimming Pool"
+          data-image="assets/pool.jpg"
+        />
+        <!-- Main Building -->
+        <area
+          class="area"
+          shape="poly"
+          coords="281,319,268,320,248,353,253,367,282,391,236,419,304,540,352,513,360,552,372,560,407,564,416,553,420,443,426,424,524,365,524,351,512,321,492,317,384,372"
+          href="#"
+          alt="The main building of PUP is consists of 4 buildings namely North Wing, South Wing, East Wing, and West Wing, and they are connected together by the Dome."
+          title="Main Building"
+          data-image="assets/main-building.jpg"
+        />
+
+      <div class="building">
+        <img
+          src=""
+          alt="Photo Building"
+          id="building__photo"
+          class="building__photo"
+        />
+        <h3 id="building__name" class="building__name"></h3>
+        <p id="building__description" class="building__description"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

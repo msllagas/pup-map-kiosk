@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #202124;
+  min-height: 110vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+header .title{
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem;
+  color:#fff
+}
+.map-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.building {
+  display: none;
+  position: absolute;
+  width: 25rem;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-height: 25rem;
+  border-radius: 1rem;
+  animation: fade-in 0.5s ease;
+  box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 22px 9px rgba(0, 0, 0, 0.75);
+}
+
+.building__photo {
+  width: 100%;
+  height: 50%;
+  height: auto;
+}
+
+.building__name {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.75rem;
+}
+
+.building__description {
+  font-size: 1.5rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
