@@ -9,10 +9,8 @@ for (let i = 0; i < areas.length; i++) {
   const alt = area.getAttribute("alt");
   const image = area.getAttribute("data-image");
 
-  //   area.removeAttribute("title");
   const originalTitle = area.getAttribute("title");
 
-  // Remove the title attribute to prevent default tooltip
   area.removeAttribute("title");
 
   area.addEventListener("mouseover", function (event) {
